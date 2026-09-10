@@ -26,7 +26,9 @@ The project covers network modeling, agent implementation, reward design, and ex
 
 ## Demo
 
-The network schematic above shows the modeled environment. A recorded demonstration of the reference agents is not yet included. Opening the SUMO scenario runs its configured signals; agent-controlled traffic requires the Python controller as well.
+[![Watch the recorded SUMO roundabout simulation](assets/demo/sumo-roundabout-demo-cover.jpg)](https://github.com/yassineallaoui4/smart-roundabout-control-rl/raw/refs/heads/main/assets/demo/sumo-roundabout-demo.mp4)
+
+*Open the image to watch a 41-second recorded SUMO simulation of the roundabout. This visual demonstration is not a quantitative performance benchmark, and the recording alone does not identify which controller produced the signal decisions.*
 
 ## System Architecture
 
@@ -122,12 +124,6 @@ The following figures are reproduced from the academic report and document one h
 *Stopped-vehicle count reported during the same test. These plotted values have not been independently regenerated from raw data.*
 
 The next comparison will use traffic metrics in common units, matched demand and seeds, and explicit reporting of unfinished trips and simulation teleports. See the [experimental evidence and evaluation plan](docs/experiments.md).
-
-## SUMO Demonstration
-
-[![Watch the recorded SUMO roundabout simulation](assets/demo/sumo-roundabout-demo-cover.jpg)](assets/demo/sumo-roundabout-demo.mp4)
-
-*Open the image to watch a 41-second recorded SUMO simulation of the roundabout. This visual demonstration is not a quantitative performance benchmark.*
 
 ## My Contribution
 
