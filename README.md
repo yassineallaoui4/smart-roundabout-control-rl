@@ -109,7 +109,25 @@ Python · SUMO · NetEdit · TraCI · NumPy · TensorFlow/Keras
 | Matched Q-Learning / Double DQN tests | Not yet verified |
 | Fixed-signal reference | Scenario execution checked; a matched evaluation remains to be conducted |
 
+### Archived comparison figures
+
+The following figures are reproduced from the academic report and document one historical test. The raw test series and the exact code revision that produced them have not been recovered, so they are presented as archived evidence rather than a reproducible benchmark.
+
+![Reported total waiting-time comparison](assets/results/waiting-time-comparison.png)
+
+*Total waiting time reported during a 3,600-second test for the fixed-timing, Q-Learning, and DQN controllers.*
+
+![Reported stopped-vehicle comparison](assets/results/stopped-vehicles-comparison.png)
+
+*Stopped-vehicle count reported during the same test. These plotted values have not been independently regenerated from raw data.*
+
 The next comparison will use traffic metrics in common units, matched demand and seeds, and explicit reporting of unfinished trips and simulation teleports. See the [experimental evidence and evaluation plan](docs/experiments.md).
+
+## SUMO Demonstration
+
+[![Watch the recorded SUMO roundabout simulation](assets/demo/sumo-roundabout-demo-cover.jpg)](assets/demo/sumo-roundabout-demo.mp4)
+
+*Open the image to watch a 41-second recorded SUMO simulation of the roundabout. This visual demonstration is not a quantitative performance benchmark.*
 
 ## My Contribution
 
@@ -123,6 +141,12 @@ The academic project was completed with **EL AAMRI Ayoub, EZZARI Aimane, and ZAI
 smart-roundabout-control-rl/
 ├── README.md
 ├── assets/
+│   ├── demo/
+│   │   ├── sumo-roundabout-demo-cover.jpg
+│   │   └── sumo-roundabout-demo.mp4
+│   ├── results/
+│   │   ├── stopped-vehicles-comparison.png
+│   │   └── waiting-time-comparison.png
 │   └── network-overview.png
 ├── docs/
 │   ├── methodology.md
@@ -146,7 +170,7 @@ This repository is a documentation showcase. Source code, trained weights, raw d
 
 1. Establish one reproducible private implementation and associate each model with its exact configuration.
 2. Correct the known learning and measurement issues, then run matched evaluations against fixed signals.
-3. Add a recorded SUMO demo and publish aggregate results once their provenance is verified.
+3. Regenerate the archived comparison figures from versioned raw data and matched evaluation runs.
 4. Explore shared control constraints, broader traffic scenarios, and multi-intersection coordination.
 
 These are planned improvements, not completed features.
